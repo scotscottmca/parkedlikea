@@ -113,6 +113,17 @@ def generate(images):
       -webkit-text-fill-color: initial;
     }}
 
+    /* ── counter ── */
+    .counter {{
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #ff6b6b;
+      text-align: center;
+      margin-top: -1.5rem;
+      margin-bottom: 2rem;
+      letter-spacing: 1px;
+    }}
+
     /* ── latest card ── */
     .latest-card {{
       width: 100%;
@@ -272,6 +283,7 @@ def generate(images):
 <body>
   <div class="container">
     <h1 class="site-title"><span class="emoji">🚗</span> Parked like a cunt in Scotland</h1>
+    <div class="counter">{len(images)} Total Cunt{"s" if len(images) != 1 else ""}</div>
 """
 
     # ── Latest image ──
